@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>626</width>
+    <height>488</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>词法分析</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="1">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>error</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QTextEdit" name="textEdit">
+          <property name="font">
+           <font>
+            <family>Courier</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>token</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QTextEdit" name="textEdit_2">
+          <property name="font">
+           <font>
+            <family>Courier</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>symbol</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QTextEdit" name="textEdit_3">
+          <property name="font">
+           <font>
+            <family>Courier</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>语法分析</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>syntax tree</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>error</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QTextEdit" name="textEdit_4">
+          <property name="font">
+           <font>
+            <family>Courier</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QTextEdit" name="textEdit_5">
+          <property name="font">
+           <font>
+            <family>Courier</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>语义分析</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>四元式</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QTextEdit" name="textEdit_6">
+          <property name="font">
+           <font>
+            <family>Courier</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>RE2NFA2DFA</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>RE</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QPushButton" name="pushButton">
+          <property name="text">
+           <string>convert</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="lineEdit"/>
+        </item>
+        <item row="1" column="1">
+         <widget class="QTabWidget" name="tabWidget_2">
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab_5">
+           <attribute name="title">
+            <string>NFA</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_5">
+            <item row="0" column="0">
+             <widget class="QTextEdit" name="textEdit_7"/>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_6">
+           <attribute name="title">
+            <string>DFA</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_6">
+            <item row="0" column="0">
+             <widget class="QTextEdit" name="textEdit_8"/>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_7">
+           <attribute name="title">
+            <string>MIN_DFA</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_7">
+            <item row="0" column="0">
+             <widget class="QTextEdit" name="textEdit_9"/>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>626</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>开始</string>
+    </property>
+    <addaction name="actionopen"/>
+    <addaction name="actionsave"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>词法分析</string>
+    </property>
+    <addaction name="actiontoken"/>
+    <addaction name="actionerror"/>
+    <addaction name="actionsymbol"/>
+    <addaction name="actionone_step"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>语法分析</string>
+    </property>
+    <addaction name="actionparser"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>语义分析</string>
+    </property>
+    <addaction name="actionsyntax_directed"/>
+   </widget>
+   <widget class="QMenu" name="menuRE2DFA">
+    <property name="title">
+     <string>RE2DFA</string>
+    </property>
+    <addaction name="actionRE2NFA"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+   <addaction name="menuRE2DFA"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionopen"/>
+   <addaction name="actionsave"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionopen">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/fileIcon/icon/add-file.png</normaloff>:/fileIcon/icon/add-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>open</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+O</string>
+   </property>
+  </action>
+  <action name="actionsave">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/fileIcon/icon/save-file.png</normaloff>:/fileIcon/icon/save-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>save</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+S</string>
+   </property>
+  </action>
+  <action name="actiontoken">
+   <property name="text">
+    <string>token</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+T</string>
+   </property>
+  </action>
+  <action name="actionerror">
+   <property name="text">
+    <string>error</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+E</string>
+   </property>
+  </action>
+  <action name="actionsymbol">
+   <property name="text">
+    <string>symbol</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+B</string>
+   </property>
+  </action>
+  <action name="actionparser">
+   <property name="text">
+    <string>parser</string>
+   </property>
+  </action>
+  <action name="actionone_step">
+   <property name="text">
+    <string>one step</string>
+   </property>
+  </action>
+  <action name="actionsyntax_directed">
+   <property name="text">
+    <string>syntax-directed</string>
+   </property>
+  </action>
+  <action name="actionRE2NFA">
+   <property name="text">
+    <string>RE2NFA</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
