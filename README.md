@@ -1,2 +1,2 @@
 # sampleParser
-learning demo on compiler
+homework code in c++
